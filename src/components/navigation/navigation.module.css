@@ -1,0 +1,147 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    height: 100px;
+    z-index: 100; /* Sørg for at z-index er højere end .burger-menu og .basket-menu */
+    /* width: clamp(37.5rem, 90.642vw - 28.125rem, 102.4rem); */
+    max-width: 1024px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #EFF4F8;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 100;
+    font-family: "Frank Ruhl Libre", serif;
+    
+  
+  }
+
+  
+  .burger {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .burger .line1, .burger .line2, .burger .line3 {
+    width: 26px;
+    height: 5px;
+    background-color: #5D9913;
+    border-radius: 100px;
+  }
+  .logo {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    aspect-ratio: 1/1;
+  }
+
+.burger-menu {
+  position: fixed;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #5D9913;
+    top: -100vh;
+    transition: 0.5s ease;
+    z-index: 99; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    gap: 15px;
+    left: 0;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 22px;
+       
+        
+    }
+    
+}
+
+
+a.active {
+  color: #fff; /* Sætter tekstfarven til hvid */
+  text-decoration: none; /* Fjerner standard understregning */
+  box-shadow: 0px 2px 0px #fff; /* Tilføjer en hvid "underline" 2px under teksten */
+}
+
+.burger-menu.active {
+  top: 100px;
+
+}
+
+.basket-burger {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .basket {
+      width: 35px;
+      height: 35px;
+      color: #5D9913;
+      svg {
+        width: 100%;
+        height: 100%;
+      
+      }
+    }
+  }
+
+
+  .basket-menu {
+    position: fixed;
+    width: 100%;
+    min-height: 150px;
+    background-color: #5D9913;
+    top: -150px;
+    transition: 0.5s ease;
+    z-index: 99; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  
+    gap: 15px;
+    left: 0;
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        padding-right: 20px;
+        font-weight: 600;
+        font-size: 22px;
+        &.active {
+            color: green;
+        }
+
+    }
+  }
+  
+  .burger-menu.active,
+.basket-menu.active {
+   top: 100px;
+}
+
+

@@ -1,0 +1,64 @@
+.backofficeNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    border-right: 2px solid #337744;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+    min-width: 150px;
+   
+
+    .logo {
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+            color: #525252;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: 0.3s;
+            width: -moz-fit-content;
+            width: fit-content;
+            max-width: 90%;
+            text-align: center;
+            &:hover {
+                color: #337744;
+            }
+            .active {
+                color: #337744;
+                
+            }
+        }
+    }
+}
+
+
+
+a.active {
+    color: #fff; /* Sætter tekstfarven til hvid */
+    text-decoration: none; /* Fjerner standard understregning */
+    box-shadow: 0px 2px 0px #337744; /* Tilføjer en hvid "underline" 2px under teksten */
+    margin-bottom: 10px;
+    
+  }

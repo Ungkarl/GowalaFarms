@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html{
+    font-size: 0.625rem;
+    height: 100%;
+}
+body{
+    font-size: 1.6rem;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/headers/page_header_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+/*BASE SITE CSS ENDING*/
+.center-page {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  
+
+ 
+}
+
+.content {
+  background-color: #fff;
+  max-width: 1024px;
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+}
+
+.backoffice-content {
+  background-color: #fff;
+  width: 100%;
+  z-index: 091201;
+
+}
+
+
+
+
+
+

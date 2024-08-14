@@ -1,0 +1,73 @@
+.subscribeForm {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    span {
+        font-family: "Roboto", sans-serif;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        input {
+            width: 300px;
+            height: 40px;
+            border: 1px solid #5D9913;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 20px;
+            font-family: "Frank Ruhl Libre", serif;
+        }
+        input::placeholder {
+            font-size: 20px;
+            font-family: "Frank Ruhl Libre", serif;
+        }
+        input:focus {
+            outline: none;
+        }
+        button {
+            width: 300px;
+            height: 40px;
+            background-color: #5D9913;
+            color: #fff;
+            font-size: 20px;
+            font-family: "Frank Ruhl Libre", serif;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background-color: #3D6E00;
+            }
+        }
+    }
+}
+
+.popup {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: white; 
+    padding: 20px; 
+    z-index: 1000;
+    width: 200px;
+    height: 200px;
+    border-radius: 091201px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    svg {
+        width: 50px;
+        height: 50px;
+        fill: #5D9913;
+    }
+}

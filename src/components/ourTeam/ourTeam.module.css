@@ -1,0 +1,51 @@
+.ourTeam {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Frank Ruhl Libre", serif;
+    gap: 20px;
+    background-image: url(/blobs/blob_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.ourTeamTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourTeamH1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.ourTeamH2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+.ourTeamDesc {
+    padding-top: 30px;
+    font-family: "Roboto", sans-serif;
+    max-width: 450px;
+    text-align: center;
+}
+
+.teamCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 75px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
